@@ -1,9 +1,9 @@
-name: Governance Hash Enforcement
+name: Governance Enforcement (Frozen Artifacts)
 
 on: [push, pull_request]
 
 jobs:
-  verify-governance:
+  governance-hash-enforcement:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
