@@ -1,0 +1,26 @@
+{
+  "determinism_baseline_version": "v1",
+  "captured_at_utc": "2026-01-19T06:13:12Z",
+  "source_date_epoch": 1768800737,
+  "git": {
+    "sha": "766ea8c3ab190cb74b4c7ebecd3e9e83caebeeb9",
+    "branch": "phase4-determinism-baseline",
+    "remote": "https://github.com/crupesystems-cell/10_PHASE3_EXECUTION.git",
+    "dirty": true
+  },
+  "system": {
+    "uname": "Darwin hjl56Air.local 25.2.0 Darwin Kernel Version 25.2.0: Tue Nov 18 21:09:55 PST 2025; root:xnu-12377.61.12~1/RELEASE_ARM64_T8103 arm64",
+    "tz": "UTC",
+    "locale": "C"
+  },
+  "toolchain": {
+    "bash": "GNU bash, version 3.2.57(1)-release (arm64-apple-darwin25)",
+    "git": "git version 2.50.1 (Apple Git-155)",
+    "python3": "",
+    "node": "",
+    "npm": "",
+    "yarn": "",
+    "pnpm": "",
+    "docker": ""
+  }
+}
