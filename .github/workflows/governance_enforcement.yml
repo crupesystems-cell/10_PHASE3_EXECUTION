@@ -1,11 +1,22 @@
 name: Governance Enforcement (Frozen Artifacts)
 
-on: [push, pull_request]
+on:
+  pull_request:
+  push:
 
 jobs:
-  governance-hash-enforcement:
+  governance_enforcement:
+    name: Governance Enforcement (Frozen Artifacts)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Verify frozen governance artifacts
-        run: ./scripts/verify_governance_hashes.sh
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Verify frozen governance hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f policy/governance_hashes.sha256
+          sha256sum --check --strict policy/governance_hashes.sha256
