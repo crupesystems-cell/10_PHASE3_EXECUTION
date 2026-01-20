@@ -6,7 +6,7 @@ on:
 
 jobs:
   governance_enforcement:
-    name: Governance Enforcement (Frozen Artifacts)
+    name: governance-hash-enforcement
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
