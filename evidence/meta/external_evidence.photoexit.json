@@ -1,0 +1,18 @@
+{
+  "type": "external_evidence_reference",
+  "source_project": "PHOTOEXIT",
+  "evidence_name": "PHOTOEXIT_CERTIFICATES_FREEZE_2026-01-12",
+  "freeze_date_utc": "2026-01-12",
+  "contains": [
+    "RELEASE_MANIFEST.txt",
+    "PACKAGES_SHA256.txt",
+    "FROZEN_AT_UTC.txt",
+    "PX-LIC-2026-00017 certificates zip",
+    "PX-LIC-2026-00021 certificates zip",
+    "PX-LIC-2026-00022 certificates zip",
+    "PX-LIC-2026-00023 certificates zip"
+  ],
+  "integrity_model": "zip + sha256, pre-frozen",
+  "access_mode": "read-only",
+  "note": "Artifacts are NOT copied into this repository. This file documents their existence and binding reference only."
+}
