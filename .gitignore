@@ -1,3 +1,6 @@
 .DS_Store
 *.log
 .env
+
+# Phase 4 determinism artifacts
+audit/

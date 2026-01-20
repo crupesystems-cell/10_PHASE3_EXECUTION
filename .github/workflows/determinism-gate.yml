@@ -1,0 +1,45 @@
+name: Determinism Gate
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  determinism:
+    name: Determinism Gate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    env:
+      # REQUIRED: define exactly what "build" means in your repo
+      BUILD_CMD: "true"
+      # REQUIRED: define which outputs are considered the build artifacts
+      ARTIFACT_GLOB: "policy/**"
+      RUN_ID: "${{ github.run_id }}-${{ github.run_attempt }}"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: System deps
+        run: |
+          set -euo pipefail
+          python3 --version
+          git --version
+
+      - name: Determinism gate
+        run: |
+          set -euo pipefail
+          ./ci/determinism_gate.sh
+        shell: bash
+
+      - name: Upload audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: determinism-audit
+          path: audit/determinism
+          if-no-files-found: error
