@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/forensicdataseal/__init__.py
+src/forensicdataseal/__main__.py
+src/forensicdataseal/cli.py
+src/forensicdataseal.egg-info/PKG-INFO
+src/forensicdataseal.egg-info/SOURCES.txt
+src/forensicdataseal.egg-info/dependency_links.txt
+src/forensicdataseal.egg-info/entry_points.txt
+src/forensicdataseal.egg-info/top_level.txt

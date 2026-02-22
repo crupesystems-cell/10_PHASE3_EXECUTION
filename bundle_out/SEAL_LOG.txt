@@ -1,0 +1,1 @@
+ForensicDataSeal 0.1.0 sealed: sha256(manifest.json)=3f19f297cafb29f541295b044b33fcf87436ea38b71549f4574fd64c61a5fe79

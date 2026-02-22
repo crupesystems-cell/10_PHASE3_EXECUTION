@@ -1,0 +1,14 @@
+{
+  "tool": "FORensicDataSeal",
+  "version": "1.0.0",
+  "created_utc": "2026-02-22T07:11:55.412495+00:00",
+  "platform": "macOS-26.3-arm64-arm-64bit",
+  "entries": [
+    {
+      "file": "b.txt",
+      "sha256": "f2c82decdd7181cf98945929a62598db7e6b477e11f6e0eb0ae97020eff151ad",
+      "size_bytes": 5,
+      "sealed_utc": "2026-02-22T07:11:55.412495+00:00"
+    }
+  ]
+}
